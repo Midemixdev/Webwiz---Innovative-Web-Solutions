@@ -379,7 +379,12 @@
   .footer-link:visited {
     padding: 3rem 3rem 3rem 4rem;
   }
-
+  .service-description {
+    font-size: 1.4rem;
+  }
+  .service-headlines {
+    font-size: 1.7rem;
+  }
   /* .footer-link:link,
   .footer-link:visited {
     padding: 2rem 1rem 2rem 2rem;

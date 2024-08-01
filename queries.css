@@ -436,10 +436,12 @@
   .hero-text-3 {
     padding: 4rem 2rem;
     justify-self: center;
+    border-radius: 5px;
+    background-color: rgba(43, 30, 22, 0.63);
     /* background-color: rgba(68, 45, 25, 0.61); */
   }
   .hero-text {
-    padding: 0rem 0rem 6rem 0rem;
+    padding: 0rem 0rem 10rem 0rem;
   }
   .section-hero {
     font-size: 1rem;

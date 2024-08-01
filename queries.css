@@ -293,6 +293,7 @@
   }
   .hero-text-3 {
     padding: 5rem 7rem 5rem 7rem;
+    background-color: rgba(43, 30, 22, 0.63);
     /* background-color: rgba(68, 45, 25, 0.61); */
   }
   .hero-text {
@@ -329,12 +330,20 @@
 
   .hero-text-3 {
     padding: 4rem 6rem;
-    /* background-color: rgba(68, 45, 25, 0.61); */
+    border-radius: 5px;
   }
   .hero-text {
-    padding: 5rem 6rem 7rem 6rem;
+    padding: 0rem 6rem 8rem 6rem;
   }
 
+  .hero-img-box {
+    height: 50rem;
+    width: 45rem;
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: 2rem;
+  }
   .section-resume {
     padding: 7rem 4rem;
   }

@@ -196,6 +196,8 @@
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
+    justify-content: center;
+    align-items: center;
   }
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
@@ -207,7 +209,7 @@
   .main-nav-list {
     flex-direction: column;
     gap: 4rem;
-
+    align-items: center;
     padding: 7rem 0rem;
   }
   .main-nav-link:link,
@@ -385,6 +387,19 @@
     padding: 2rem 2rem 2rem 3rem;
   }
 
+  .section-services {
+    padding: 7rem 2rem;
+  }
+  .serve-1 {
+    padding: 1rem;
+  }
+  .services-heading {
+    margin-bottom: 4rem;
+  }
+
+  .all-services {
+    row-gap: 2rem;
+  }
   .tech-skills,
   .professional-skills,
   .creative-skills {
@@ -430,4 +445,12 @@
     grid-template-columns: 55fr 45fr;
   } */
   /* media at 500px */ /* media at 1300px */
+}
+
+@media (max-width: 23.125em) {
+  .tech-skills,
+  .professional-skills,
+  .creative-skills {
+    padding: 2rem 3rem;
+  }
 }

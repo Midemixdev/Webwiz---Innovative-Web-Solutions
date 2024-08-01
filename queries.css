@@ -434,21 +434,31 @@
   }
 
   .hero-text-3 {
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
     justify-self: center;
     /* background-color: rgba(68, 45, 25, 0.61); */
   }
   .hero-text {
-    padding: 5rem 2rem 4rem 2rem;
+    padding: 0rem 0rem 6rem 0rem;
   }
   .section-hero {
     font-size: 1rem;
+  }
+
+  .hero-img-box {
+    height: 50rem;
+    width: 45rem;
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: 2rem;
   }
   .tech-skills,
   .professional-skills,
   .creative-skills {
     padding: 2rem 3rem;
   }
+
   /* .hero {
     grid-template-columns: 55fr 45fr;
   } */

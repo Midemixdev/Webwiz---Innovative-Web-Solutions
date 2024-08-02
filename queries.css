@@ -214,7 +214,7 @@
   }
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 2.2rem;
+    font-size: 3rem;
     display: flex;
   }
 
@@ -292,7 +292,8 @@
   }
   .hero-text-3 {
     padding: 5rem 7rem 5rem 7rem;
-    background-color: rgba(43, 30, 22, 0.63);
+    background-color: rgba(0, 0, 0, 0.753);
+    justify-self: center;
     /* background-color: rgba(68, 45, 25, 0.61); */
   }
   .hero-text {
@@ -332,7 +333,7 @@
     border-radius: 5px;
   }
   .hero-text {
-    padding: 0rem 6rem 8rem 6rem;
+    padding: 0rem;
   }
 
   .hero-img-box {
@@ -476,14 +477,12 @@
   }
 
   .hero-text-3 {
-    padding: 4rem 2rem;
+    padding: 4rem;
     justify-self: center;
-    border-radius: 5px;
-    background-color: rgba(43, 30, 22, 0.63);
-    /* background-color: rgba(68, 45, 25, 0.61); */
+    border-radius: 0px;
   }
   .hero-text {
-    padding: 0rem 0rem 10rem 0rem;
+    padding: 0rem;
   }
   .section-hero {
     font-size: 1rem;

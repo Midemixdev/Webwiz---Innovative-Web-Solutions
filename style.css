@@ -451,9 +451,13 @@ body {
   background-color: #55555556;
 }
 .lorem {
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 1.8rem;
+  line-height: 1.4;
   text-align: justify;
+}
+.flex {
+  display: flex;
+  align-items: center;
 }
 .work {
   font-size: 3rem;

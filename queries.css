@@ -192,6 +192,15 @@
     /* hide it fromsreen readers */
     visibility: hidden;
   }
+  .red:link,
+  .red:visited {
+    color: #ffffffef;
+  }
+  .red:hover,
+  .red:active {
+    color: #555;
+  }
+
   .nav-open .main-nav {
     opacity: 1;
     visibility: visible;

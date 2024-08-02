@@ -66,6 +66,9 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+// Remove nav-open class on page load
+headerEl.classList.remove("nav-open");
+
 // smoth smot
 
 // const allLinks = document.querySelectorAll("a:link");

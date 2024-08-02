@@ -54,6 +54,10 @@ body {
   margin-bottom: 8px;
 }
 
+.heading {
+  display: none;
+}
+
 .norms {
   font-size: 1.6rem;
   margin-bottom: 3px;
@@ -128,12 +132,18 @@ body {
 }
 .header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 2rem 7rem;
   background-color: rgba(0, 0, 0, 0.815);
   position: relative;
+  align-items: center;
 }
-
+.tag-nav {
+  font-size: 2.2rem;
+  color: #c49815;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -144,7 +154,7 @@ body {
 .icon-mobile-nav {
   height: 3.8rem;
   width: 3.8rem;
-  color: #fff;
+  color: #ffffffee;
 }
 .icon-mobile-nav[name="close-outline"] {
   display: none;
@@ -447,7 +457,7 @@ body {
   align-items: center;
 }
 .work {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   align-self: center;
   font-weight: 600;
   text-transform: uppercase;

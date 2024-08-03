@@ -72,7 +72,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-.animated-text {
+/* .animated-text {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
@@ -88,7 +88,38 @@ body {
   to {
     width: 100%;
   }
+} */
+.animated-text {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid rgba(0, 0, 0, 0.767);
+  animation: typing 6s steps(20) infinite, deleting 6s steps(20) infinite 10s;
 }
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes deleting {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .logo {
   font-size: 2.3rem;
   background-color: rgba(0, 0, 0, 0.384);
@@ -383,8 +414,9 @@ body {
 .creative-skills {
   color: #ffffffd7;
   background-color: rgba(0, 0, 0, 0.103);
-  padding: 5rem 6rem 5rem 6rem;
+  padding: 4rem 5rem 4rem 5rem;
   border-radius: 1rem;
+  box-shadow: 0px 4px 10px 5px rgba(255, 255, 255, 0.041);
 }
 .tech-skills-head,
 .pro-skills-head,

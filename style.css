@@ -72,51 +72,27 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* .animated-text {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 1px solid transparent;
-  animation: typing 2.5s steps(40), blink-caret 1s ease-in-out infinite;
-  animation-iteration-count: infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-} */
 .animated-text {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15em solid rgba(0, 0, 0, 0.767);
-  animation: typing 6s steps(20) infinite, deleting 6s steps(20) infinite 10s;
+  animation: typing 2s steps(20), delete 2s 4s;
 }
 
 @keyframes typing {
   0% {
     width: 0;
   }
-  50% {
-    width: 100%;
-  }
   100% {
-    width: 0;
+    width: 100%;
   }
 }
 
-@keyframes deleting {
+@keyframes delete {
   0% {
     width: 100%;
   }
-  50% {
-    width: 0;
-  }
   100% {
-    width: 100%;
+    width: 0;
   }
 }
 

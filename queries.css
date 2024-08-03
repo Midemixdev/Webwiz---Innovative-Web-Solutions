@@ -524,3 +524,9 @@
   } */
   /* media at 500px */ /* media at 1300px */
 }
+
+@media (max-width: 23.125em) {
+  .hero-text-3 {
+    padding: 4rem 5.5rem 4rem 4rem;
+  }
+}

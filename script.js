@@ -134,3 +134,20 @@ allLinks.forEach(function (link) {
     // No action needed, let the link navigate normally
   }
 });
+
+// const video = document.querySelector(".video");
+
+// video.addEventListener("ended", function () {
+//   video.play();
+// });
+
+let isPlaying = false;
+document.querySelector(".video").addEventListener("click", function () {
+  if (!isPlaying) {
+    this.play();
+    isPlaying = true;
+  } else {
+    this.pause();
+    isPlaying = false;
+  }
+});

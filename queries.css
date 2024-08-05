@@ -38,6 +38,23 @@
   /* media at 1200px */ /* media at 1300px */
 }
 
+@media (max-width: 69.38em) {
+  .nav-start {
+    display: none;
+  }
+  /* rem at 1110px */
+}
+
+@media (max-width: 64.375em) {
+  .section-project {
+    padding: 9rem 6rem;
+  }
+  .nav-start {
+    display: none;
+  }
+  /* rem at 1030px */
+}
+
 @media (max-width: 62.5em) {
   .section-services {
     padding: 8rem 7rem 8rem 7rem;
@@ -99,6 +116,15 @@
   } */
   /* media at 1000px */ /* media at 1300px */
 }
+@media (max-width: 60.75em) {
+  .work-1 {
+    gap: 5rem;
+  }
+  .section-project {
+    padding: 9rem 4rem;
+  }
+  /* media at 972px */
+}
 @media (max-width: 56.875em) {
   .skills-all {
     column-gap: 7rem;
@@ -113,6 +139,12 @@
   .professional-skills,
   .creative-skills {
     padding: 4rem 3rem 4rem 3rem;
+  }
+  .work-1 {
+    gap: 5rem;
+  }
+  .section-project {
+    padding: 9rem 2rem;
   }
 
   /* .hero {
@@ -162,6 +194,16 @@
     grid-template-columns: 55fr 45fr;
   } */
   /* media at 855px */ /* media at 1300px */
+}
+
+@media (max-width: 49.06em) {
+  .work-1 {
+    gap: 3rem;
+  }
+  .section-project {
+    padding: 9rem 1rem;
+  }
+  /* media at 785px */ /* media at 1300px */
 }
 
 @media (max-width: 46.875em) {
@@ -311,12 +353,24 @@
   .footer {
     padding: 9rem 5rem 0rem 5rem;
   }
+  .work-1 {
+    grid-template-columns: 1fr;
+    row-gap: 3.5rem;
+  }
+  .section-project {
+    padding: 9rem;
+  }
   /* .hero {
     grid-template-columns: 55fr 45fr;
   } */
   /* media at 750px */ /* media at 1300px */
 }
-
+@media (max-width: 43.38em) {
+  .work-1 {
+    row-gap: 3rem;
+  }
+  /* media at 694px */ /* media at 1300px */
+}
 @media (max-width: 37.5em) {
   .about-me {
     padding: 5rem 3rem;
@@ -364,7 +418,8 @@
   .primary,
   .services-heading,
   .hero-primary,
-  .footer-primary {
+  .footer-primary,
+  .work {
     font-size: 3.1rem;
   }
   .hero-primary {
@@ -428,6 +483,18 @@
   .service-headlines {
     font-size: 1.7rem;
   }
+
+  .hero-primary {
+    margin-bottom: 6px;
+  }
+  .work-1 {
+    row-gap: 2.5rem;
+  }
+
+  .work {
+    margin-bottom: 5rem;
+  }
+
   /* .footer-link:link,
   .footer-link:visited {
     padding: 2rem 1rem 2rem 2rem;
@@ -518,7 +585,9 @@
   .creative-skills {
     padding: 2rem 3rem;
   }
-
+  .work {
+    margin-bottom: 4rem;
+  }
   /* .hero {
     grid-template-columns: 55fr 45fr;
   } */
@@ -528,6 +597,9 @@
 @media (max-width: 23.75em) {
   .hero-text-3 {
     padding: 4rem 5.5rem 4rem 4rem;
+  }
+  .section-project {
+    padding: 6rem 1rem;
   }
   /* media at 380px */ /* media at 1300px */
 }

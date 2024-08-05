@@ -135,11 +135,11 @@ allLinks.forEach(function (link) {
   }
 });
 
-const video = document.querySelector(".video");
+// const video = document.querySelector(".video");
 
-video.addEventListener("ended", function () {
-  video.play();
-});
+// video.addEventListener("ended", function () {
+//   video.play();
+// });
 
 // let isPlaying = false;
 // document.querySelector(".video").addEventListener("click", function () {

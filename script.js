@@ -135,19 +135,19 @@ allLinks.forEach(function (link) {
   }
 });
 
-const video = document.querySelector(".video");
+// const video = document.querySelector(".video");
 
-video.addEventListener("ended", function () {
-  video.play();
-});
-
-// let isPlaying = false;
-// document.querySelector(".video").addEventListener("click", function () {
-//   if (!isPlaying) {
-//     this.play();
-//     isPlaying = true;
-//   } else {
-//     this.pause();
-//     isPlaying = false;
-//   }
+// video.addEventListener("ended", function () {
+//   video.play();
 // });
+
+let isPlaying = false;
+document.querySelector(".video").addEventListener("click", function () {
+  if (!isPlaying) {
+    this.play();
+    isPlaying = true;
+  } else {
+    this.pause();
+    isPlaying = false;
+  }
+});

@@ -141,13 +141,13 @@ allLinks.forEach(function (link) {
 //   video.play();
 // });
 
-let isPlaying = false;
-document.querySelector(".video").addEventListener("click", function () {
-  if (!isPlaying) {
-    this.play();
-    isPlaying = true;
-  } else {
-    this.pause();
-    isPlaying = false;
-  }
-});
+// let isPlaying = false;
+// document.querySelector(".video").addEventListener("click", function () {
+//   if (!isPlaying) {
+//     this.play();
+//     isPlaying = true;
+//   } else {
+//     this.pause();
+//     isPlaying = false;
+//   }
+// });

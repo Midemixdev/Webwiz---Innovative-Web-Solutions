@@ -51,9 +51,9 @@ btnNavEl.addEventListener("click", function () {
 // Remove nav-open class on page load
 headerEl.classList.remove("nav-open");
 const allLinks = document.querySelectorAll("a:link");
+
 allLinks.forEach(function (link) {
   const href = link.getAttribute("href");
-
   // Check if the link is internal (starts with #)
   if (href.startsWith("#")) {
     link.addEventListener("click", function (e) {

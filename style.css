@@ -251,24 +251,6 @@ body {
   z-index: -1;
   opacity: 90%;
 }
-/* 
-.about-me-img-text::before {
-  content: "";
-  display: block;
-  width: 62%;
-  padding-bottom: 87%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 50%;
-  border: 1px solid rgba(167, 58, 58, 0.473);
-  background-image: linear-gradient(to right, #fff, #fff);
-} */
-
 .all {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,17 +296,6 @@ body {
   border-radius: 1rem;
   font-weight: 550;
   transition: all 0.3s;
-}
-
-.about-me-animation {
-  opacity: 0;
-  transform: scale(0.9) translateX(100px);
-  transition: opacity 0.2s, transform 1s;
-}
-
-.about-me-animation.animate {
-  opacity: 1;
-  transform: scale(1) translateX(0);
 }
 
 .btn:hover,

@@ -17,81 +17,71 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
-// for sticky for sticy for sticky
-
+// for sticky nav
 const sectionHeroEl = document.querySelector(".section-hero");
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) document.body.classList.add("sticky");
+  else document.body.classList.remove("sticky");
+};
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-70px",
+});
+headerObserver.observe(sectionHeroEl);
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
-    }
-
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-70px",
-  }
-);
-obs.observe(sectionHeroEl);
+// for toggle  nav
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
-
-// // Remove nav-open class on page load
 headerEl.classList.remove("nav-open");
-const allLinks = document.querySelectorAll("a:link");
 
-allLinks.forEach(function (link) {
-  const href = link.getAttribute("href");
-  // Check if the link is internal (starts with #)
-  if (href.startsWith("#")) {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      // Scroll to internal sections
-      if (href !== "#") {
-        const sectionEl = document.querySelector(href);
-        sectionEl.scrollIntoView({ behavior: "smooth" });
-      }
-      // Scroll to top
-      else {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-
-      // Close mobile navigation
-      if (link.classList.contains("main-nav-link")) {
-        headerEl.classList.toggle("nav-open");
-      }
-    });
-  }
-  // Do nothing for external links (let them navigate normally)
-  else if (
-    href.startsWith("http") ||
-    href.startsWith("mailto:") ||
-    href.startsWith("tel:") ||
-    href.startsWith("(http)") ||
-    href.startsWith("(github)")
-  ) {
-    // No action needed, let the link navigate normally
+//  page navigation
+document.querySelector(".nav__links").addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("main-nav-link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    headerEl.classList.remove("nav-open");
   }
 });
-const video = document.querySelector(".video");
 
+// Button scrolling  //
+const end = document.querySelector(".end");
+end.addEventListener("click", function (e) {
+  e.preventDefault();
+  sectionHeroEl.scrollIntoView({ behavior: "smooth" });
+});
+
+// for vedio
+const video = document.querySelector(".video");
 video.addEventListener("click", () => {
   if (video.paused) {
     video.play();
   } else {
     video.pause();
   }
+});
+
+// for reveal animation
+const allSections = document.querySelectorAll(".section");
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (entry.isIntersecting) {
+    entry.target.classList.remove("section--hidden");
+    observer.unobserve(entry.target);
+  }
+};
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
 });

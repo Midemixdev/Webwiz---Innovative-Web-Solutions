@@ -5,7 +5,6 @@
 }
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 body {
@@ -20,6 +19,14 @@ body {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 /* Section hero part */ /* Section hero part */
 .section-hero-1 {
   background-color: rgba(109, 73, 43, 0.3);
